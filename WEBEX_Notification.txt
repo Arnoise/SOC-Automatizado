@@ -1,0 +1,5 @@
+{
+  "roomId": "<room_ID>",
+  "text": "**$html_to_json.#.tool - $html_to_json.#.organization**\n- Host: $html_to_json.#.identities_0.label\n- Dominio: $html_to_json.#.domain\n- Categoría: $html_to_json.#.policycategories_0.label",
+  "markdown": "### **$html_to_json.#.tool - $html_to_json.#.organization**\n\n- **Host**: $html_to_json.#.identities_0.label\n- **Dominio**: $html_to_json.#.domain\n- **Categoría**: $html_to_json.#.policycategories_0.label"
+}

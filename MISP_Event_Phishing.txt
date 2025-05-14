@@ -1,0 +1,46 @@
+{
+  "Event": {
+    "info": "Dominio categorizado como phishing por Umbrella",
+    "date": "$html_to_json.#.date",
+    "distribution": 3,
+    "threat_level_id": 2,
+    "analysis": 1,
+    "Attribute": [
+      {
+        "category": "Network activity",
+        "type": "domain",
+        "value": "$html_to_json.#.domain",
+        "to_ids": true,
+        "comment": "Dominio utilizado para phishing"
+      },
+      {
+        "category": "Network activity",
+        "type": "ip-src",
+        "value": "$ip_from_phishing_domain.#.message",
+        "to_ids": true,
+        "comment": "IP detectada en actividad sospechosa"
+      }
+    ],
+    "Tag": [
+      {
+        "name": "tlp:green"
+      },
+      {
+        "name": "PAP:GREEN"
+      },
+      {
+        "name": "red-nacional-soc:status=\"ongoing\""
+      },
+      {
+        "name": "circl:incident-classification=\"phishing\""
+      }
+    ],
+    "Galaxy": [
+      {
+        "name": "mitre-attack",
+        "type": "Attack Pattern",
+        "value": "T1566 - Phishing"
+      }
+    ]
+  }
+}

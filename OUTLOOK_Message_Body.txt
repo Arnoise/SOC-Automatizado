@@ -1,0 +1,15 @@
+{
+  "subject": "$jira_issue.#.body.key - $html_to_json.#.tool Detecciones - $html_to_json.#.date",
+  "importance": "Low",
+  "body": {
+    "contentType": "HTML",
+    "content": "Buenos días,<br><br>Le reportamos el siguiente incidente detectado por Umbrella:<br><br><ul><li><strong>Host: </strong>$html_to_json.#.identities_0.label</li><ul><li>En fecha $html_to_json.#.date a las $html_to_json.#.time visitó el dominio '$defang_domain.#.message', el cual se reporta como $html_to_json.#.policycategories_0.label y aparece en la lista de bloqueados.</ul></li></ul>"
+  },
+  "ccRecipients": [
+    {
+      "emailAddress": {
+        "address": "user@example.es"
+      }
+    }
+  ]
+}
